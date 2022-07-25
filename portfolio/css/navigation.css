@@ -1,0 +1,139 @@
+/* .navigation {
+}
+.navigationContainer {
+} */
+.navigationCheck {
+  display: none;
+}
+.navigationMenu {
+  position: absolute;
+  top: 2.5%;
+  left: 95%;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* -webkit-box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%); */
+  text-align: center;
+  cursor: pointer;
+}
+.navigationClose {
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%);
+  text-align: center;
+  cursor: pointer;
+}
+.navigationMenuButton {
+  color: #222;
+  height: 3rem;
+  width: 3rem;
+}
+.navigationCloseButton {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #222;
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  top: 2.5%;
+  left: 90%;
+  opacity: 0;
+}
+.navigationLink:checked ~ .navigationBackgroundColor {
+  opacity: 0;
+}
+.navigationCheck:checked ~ nav {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.8;
+}
+.navigationCheck:checked ~ .navigationBackgroundColor {
+  opacity: 1;
+  transform: scale(80);
+  transition: all 0.8;
+}
+.navigationCheck:checked + div .navigationMenuButton {
+  opacity: 0;
+}
+.navigationCheck:checked + div .navigationCloseButton {
+  opacity: 1;
+}
+.navigationBackgroundColor {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(235, 151, 78),
+    rgb(230, 125, 34)
+  );
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 5%;
+  left: 90%;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navigationListItems {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.navigationList {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.navigationLink {
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #fff 50%
+  );
+  background-size: 220%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.8s;
+  word-spacing: 0.5rem;
+}
+.navigationLink:hover {
+  background-position: 100%;
+  color: #ff922b;
+  transform: translateX(1rem);
+}
+.navigationSpan {
+  font-size: 3rem;
+  display: inline-block;
+  font-weight: 300;
+  margin-right: 1.5rem;
+}

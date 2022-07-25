@@ -1,0 +1,171 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  padding: 5rem 8rem;
+  background-color: #fff;
+}
+.aboutFirstContainer {
+  max-width: 40%;
+}
+.aboutFirstCard {
+  display: inline-block;
+}
+.aboutFirstTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+.aboutFirstTitleSecond {
+  color: #ff922b;
+}
+.aboutFirstLabel {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.aboutFirstButton {
+  margin: 1rem 0 0 -1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 10rem;
+  background-color: #ff922b;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  animation: moveButton 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.aboutFirstButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.aboutFirstButton:active {
+  transform: translateY(-1px);
+}
+
+.aboutFirstButton::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ff922b;
+  transition: all 0.4s;
+}
+
+.aboutFirstButton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.aboutFirstButton {
+}
+.aboutSecondContainer {
+  width: 60%;
+  position: relative;
+  margin-top: 4rem;
+}
+.aboutSecondCard1,
+.aboutSecondCard2,
+.aboutSecondCard3 {
+  width: 35%;
+  height: 80%;
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
+  border-radius: 1rem;
+  background-color: #fff4e6;
+  transition: all 0.4s;
+}
+.aboutSecondCard1:hover,
+.aboutSecondCard2:hover,
+.aboutSecondCard3:hover {
+  transform: translateY(-1.1rem) scale(1.05);
+}
+.aboutSecondCard1 {
+  position: absolute;
+  top: -10%;
+  left: 38%;
+}
+.aboutSecondCard2 {
+}
+.aboutSecondCard3 {
+  position: absolute;
+  top: 0%;
+  left: 76%;
+}
+
+.ph-drop-half,
+.ph-sketch-logo,
+.ph-code {
+  margin: 2rem 0rem 1rem 0rem;
+  color: #ff922b;
+  font-size: 3rem;
+}
+.aboutSecondTitle {
+  color: #ff922b;
+  text-align: center;
+}
+.aboutSecondLabel {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.center {
+  text-align: center;
+}
+.aboutFutearsContainer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
+}
+.aboutSecondButton {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #3e2723;
+}
+.aboutSecondButton:hover {
+  background-color: #ff922b;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.aboutFutears {
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  border: 5px solid #00ff0a;
+  border-radius: 50%;
+  animation: color 1.2s linear infinite;
+  margin-right: 5rem;
+}
+.aboutFutears2 {
+  padding: 1rem 0.7rem;
+}
+.aboutFutearsTitle {
+  margin-right: 5rem;
+}
+.aboutFutearsTitle1 {
+  margin: 1rem 0 0.5rem 0;
+}
+.aboutFutearsTitle2 {
+  color: #ff922b;
+}

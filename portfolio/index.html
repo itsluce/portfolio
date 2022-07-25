@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="./css/style.css" />
+    <link rel="styleSheet" href="./css/header.css" />
+    <link rel="styleSheet" href="./css/about.css" />
+    <link rel="styleSheet" href="./css/project.css" />
+    <link rel="styleSheet" href="./css/sign.css" />
+    <link rel="styleSheet" href="./css/quaries.css" />
+    <link rel="styleSheet" href="./css/navigation.css" />
+    <link rel="styleSheet" href="./css/animation.css" />
+    <link rel="styleSheet" href="./script.js" />
+    <link rel="shortcut icon" type="image/png" href="img/l logo.png" />
+    <title>Luce Portfolio</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,700;1,400&family=Rubik:wght@400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav navButton" href="#">Home</a>
+        <a class="nav" href="#about">About Me</a>
+        <a class="nav" href="#projects">Projects</a>
+        <a class="nav" href="#start">Contact</a>
+        <button class="menuButtonContainer">
+          <ion-icon name="menu-outline" class="menuButton"></ion-icon
+          ><ion-icon name="close-outline" class="closeButton"></ion-icon>
+        </button>
+      </nav>
+      <div class="mainLogo">
+        <div class="dotContainer">
+          <div class="topRight">
+            <div class="top">
+              <div class="dot" style="--i: 0"></div>
+              <div class="dot" style="--i: 1"></div>
+              <div class="dot" style="--i: 2"></div>
+              <div class="dot" style="--i: 3"></div>
+              <div class="dot" style="--i: 4"></div>
+              <div class="dot" style="--i: 5"></div>
+              <div class="dot" style="--i: 6"></div>
+              <div class="dot" style="--i: 7"></div>
+              <div class="dot" style="--i: 8"></div>
+              <div class="dot" style="--i: 9"></div>
+              <div class="dot" style="--i: 9"></div>
+              <div class="dot" style="--i: 10"></div>
+              <div class="dot" style="--i: 11"></div>
+              <div class="dot" style="--i: 12"></div>
+              <div class="dot" style="--i: 12.1"></div>
+              <div class="dot" style="--i: 12.2"></div>
+              <div class="dot" style="--i: 12.3"></div>
+            </div>
+            <div class="right">
+              <div class="dot" style="--i: 13"></div>
+              <div class="dot" style="--i: 13.1"></div>
+              <div class="dot" style="--i: 13.2"></div>
+              <div class="dot" style="--i: 14"></div>
+              <div class="dot" style="--i: 15"></div>
+              <div class="dot" style="--i: 16"></div>
+            </div>
+            <div class="rot">
+              <div class="top">
+                <div class="dot" style="--i: 18"></div>
+                <div class="dot" style="--i: 19"></div>
+                <div class="dot" style="--i: 20"></div>
+                <div class="dot" style="--i: 21"></div>
+                <div class="dot" style="--i: 22"></div>
+                <div class="dot" style="--i: 23"></div>
+                <div class="dot" style="--i: 24"></div>
+                <div class="dot" style="--i: 25"></div>
+                <div class="dot" style="--i: 26"></div>
+                <div class="dot" style="--i: 27"></div>
+                <div class="dot" style="--i: 28"></div>
+                <div class="dot" style="--i: 29"></div>
+                <div class="dot" style="--i: 30"></div>
+                <div class="dot" style="--i: 31"></div>
+                <div class="dot" style="--i: 31.1"></div>
+                <div class="dot" style="--i: 31.2"></div>
+                <div class="dot" style="--i: 31.3"></div>
+              </div>
+              <div class="right">
+                <div class="dot" style="--i: 32"></div>
+                <div class="dot" style="--i: 33"></div>
+                <div class="dot" style="--i: 34"></div>
+                <div class="dot" style="--i: 35"></div>
+                <div class="dot" style="--i: 36"></div>
+                <div class="dot" style="--i: 37"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <a class="logo" href="#">Luce</a>
+        </div>
+      </div>
+    </header>
+    <section class="navigation">
+      <div class="navigationContainer">
+        <input type="checkbox" class="navigationCheck" id="navigationToggle" />
+        <div>
+          <label for="navigationToggle" class="navigationMenu"
+            ><ion-icon
+              name="menu-outline"
+              class="navigationMenuButton"
+            ></ion-icon
+            ><ion-icon
+              name="close-outline"
+              class="navigationCloseButton"
+            ></ion-icon
+          ></label>
+        </div>
+        <!-- <div>
+          <label for="navigationToggle" class="navigationClose"></label>
+        </div> -->
+        <div class="navigationBackgroundColor"></div>
+        <nav class="nav">
+          <ul class="navigationListItems">
+            <li class="navigationList">
+              <a href="#" class="navigationLink">Home</a>
+            </li>
+            <li class="navigationList">
+              <a href="#about" class="navigationLink">About</a>
+            </li>
+            <li class="navigationList">
+              <a href="#projects" class="navigationLink">Projects</a>
+            </li>
+            <li class="navigationList">
+              <a href="#sign" class="navigationLink">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="firstPage">
+      <div class="mainContainer">
+        <div class="hero">
+          <article class="firstMain">
+            <h2 class="hi">Hi! I'm</h2>
+            <h1 class="md">Mouhanad Dandashly</h1>
+            <p class="summary">
+              Frontend developer with hight skill level and experience in web
+              designing and development.
+            </p>
+            <a class="headerButton" href="#sign">Hire me</a>
+            <div class="logoContainer">
+              <a
+                class="headerALogo"
+                href="https://www.instagram.com/it_s.luce/?hl=en"
+                target="_blank"
+                ><i class="ph-instagram-logo"></i
+              ></a>
+              <a
+                class="headerALogo"
+                href="https://www.linkedin.com/in/luce-dandashly-a1b07021a/"
+                target="_blank"
+                ><i class="ph-linkedin-logo"></i
+              ></a>
+              <a
+                class="headerALogo"
+                href="https://www.facebook.com/m.dandashly13/"
+                target="_blank"
+                ><i class="ph-facebook-logo"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+        <div class="heroImgContainer">
+          <!-- <img src="./img/Vector2.png" class="victorHeader" alt="Vector" /> -->
+          <img
+            src="./img/Screenshot 2022-05-27 231314.png"
+            class="heroImg"
+            alt="people"
+          />
+          <!-- <span class="heroTextBox1">
+            <i class="ph-crown-simple"></i>Web Developer</span
+          >
+          <span class="heroTextBox2">
+            <i class="ph-thumbs-up"></i>Best Design</span
+          > -->
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="aboutContainer">
+        <div class="aboutFirstContainer">
+          <div class="aboutFirstCard">
+            <h2 class="aboutFirstTitle">
+              <label>My Awesome</label>
+              <label class="aboutFirstTitleSecond">Services</label>
+            </h2>
+            <div class="aboutFirstLabel">
+              <label
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio excepturi beatae, enim, labore nihil voluptates
+                quibusdam doloremque
+              </label>
+            </div>
+            <a
+              class="aboutFirstButton"
+              href="https://drive.google.com/file/d/1uV68vqVJXNs3TDoZ0YOfz9vwa9j8lYBL/view?usp=sharing"
+              target="_blank"
+              >Download CV.</a
+            >
+          </div>
+        </div>
+        <div class="aboutSecondContainer">
+          <div class="aboutSecondCard1">
+            <div class="center">
+              <i class="ph-drop-half"></i>
+            </div>
+            <h3 class="aboutSecondTitle">Design</h3>
+            <p class="aboutSecondLabel">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="center">
+              <div class="center">
+                <a class="aboutSecondButton" href="#projects">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="aboutSecondCard2">
+            <div class="center">
+              <i class="ph-code"></i>
+            </div>
+            <h3 class="aboutSecondTitle">Developer</h3>
+            <p class="aboutSecondLabel">
+              Html, Css, JavaScript, Angular, ReactNative, React.
+            </p>
+            <div class="center">
+              <a class="aboutSecondButton" href="#projects">Learn more</a>
+            </div>
+          </div>
+          <div class="aboutSecondCard3">
+            <div class="center">
+              <i class="ph-sketch-logo"></i>
+            </div>
+            <h3 class="aboutSecondTitle">UI/UX</h3>
+            <p class="aboutSecondLabel">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="center">
+              <a class="aboutSecondButton" href="#projects">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutFutearsContainer">
+        <div>
+          <h3 class="aboutFutears">+1</h3>
+          <h3 class="aboutFutearsTitle">
+            <p class="aboutFutearsTitle1">Year</p>
+            <p class="aboutFutearsTitle2">Experience</p>
+          </h3>
+        </div>
+        <div>
+          <h3 class="aboutFutears aboutFutears2">+10</h3>
+          <h3 class="aboutFutearsTitle">
+            <p class="aboutFutearsTitle1">completed</p>
+            <p class="aboutFutearsTitle2">Projects</p>
+          </h3>
+        </div>
+        <div>
+          <h3 class="aboutFutears">+1</h3>
+          <h3 class="aboutFutearsTitle">
+            <p class="aboutFutearsTitle1">Company</p>
+            <p class="aboutFutearsTitle2">Work</p>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projectContainer">
+        <div class="center">
+          <h2 class="projectTitle">My Amazing</h2>
+          <h2 class="projectTitle projectTitle2">Projects</h2>
+        </div>
+        <div class="projectCardContainer">
+          <div class="projectCard">
+            <div class="center">
+              <img
+                class="projectImg"
+                src="img/React App - Google Chrome 7_12_2022 1_34_17 PM.png"
+              />
+            </div>
+            <div class="center">
+              <h3 class="projectCardTitle projectCardTitle0">Game Room</h3>
+            </div>
+            <p class="projectCardPar">A store for buying computer games.</p>
+            <a
+              class="projectCardButton projectCardButton0"
+              target="_blank"
+              href="https://game-room-e99a1.web.app"
+              >Tap To View</a
+            >
+          </div>
+          <div class="projectCard">
+            <div class="center">
+              <img
+                class="projectImg"
+                src="img/Screenshot 2022-05-27 142712.png"
+              />
+            </div>
+            <div class="center">
+              <h3 class="projectCardTitle">Lucefood</h3>
+            </div>
+            <p class="projectCardPar">
+              A healthy meal delivered to your door, every single day.
+            </p>
+            <a
+              class="projectCardButton projectCardButton1"
+              target="_blank"
+              href="https://lucefood.netlify.app/"
+              >Tap To View</a
+            >
+          </div>
+          <div class="projectCard">
+            <div class="center">
+              <img
+                class="projectImg"
+                src="img/Screenshot 2022-05-27 145113.png"
+              />
+            </div>
+            <div class="center">
+              <h3 class="projectCardTitle projectCardTitle2">Lucetours</h3>
+            </div>
+            <p class="projectCardPar">
+              A healthy meal delivered to your door, every single day.
+            </p>
+            <a
+              class="projectCardButton projectCardButton2"
+              href="https://lucetours.netlify.app/"
+              target="_blank"
+              >Tap To View</a
+            >
+          </div>
+          <div class="projectCard">
+            <div class="center">
+              <img
+                class="projectImg"
+                src="img/Screenshot 2022-05-27 150429.png"
+              />
+            </div>
+            <div class="center">
+              <h3 class="projectCardTitle projectCardTitle3">Nexter</h3>
+            </div>
+            <p class="projectCardPar">
+              Your own home,The ultimate personal freedom.
+            </p>
+            <a
+              class="projectCardButton projectCardButton3"
+              href="https://lucenexter.netlify.app/"
+              target="_blank"
+              >Tap To View</a
+            >
+          </div>
+          <div class="projectCard projectCardPosition">
+            <div class="center">
+              <img
+                class="projectImg"
+                src="img/Screenshot 2022-05-27 150310.png"
+              />
+            </div>
+            <div class="center">
+              <h3 class="projectCardTitle projectCardTitle4">Bankist</h3>
+            </div>
+            <p class="projectCardPar">When banking meets minimalist.</p>
+            <a
+              class="projectCardButton projectCardButton4"
+              href="https://lucebanker.netlify.app/"
+              target="_blank"
+              >Tap To View</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="signup" id="sign">
+      <div class="signupContainer">
+        <div class="signupImgMob" role="img" aria-label="people"></div>
+        <div>
+          <div class="signupList">
+            <h2 class="signupTitle">For hiring me...</h2>
+            <p class="signupDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae numquam fuga veniam? Corporis quod quaerat assumenda
+              obcaecati? Nisi rerum velit voluptatem, impedit laboriosam dicta.
+            </p>
+            <div class="signupCard">
+              <div class="signupInput">
+                <label class="signupLabel">Full Name</label>
+                <input class="input" placeholder="Luce" />
+                <label class="signupLabel2">Email Address</label>
+                <input class="input2" placeholder="Luce@example.com" />
+                <label class="signupLabel">Where You Hear From Us?</label>
+                <select class="signupSelect">
+                  <option>Please choose one</option>
+                  <option>Friends & Family</option>
+                  <option>YouTube Video</option>
+                  <option>Podcast</option>
+                  <option>FaceBook Ad</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="signupInput">
+                <label class="signupLabel email2">Email Address</label>
+                <input class="input email2" placeholder="Luce@example.com" />
+                <a href="#" class="signupButton">Sign up now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="signupImg"
+          role="img"
+          aria-label="Woman enjoying food"
+        ></div>
+      </div>
+    </section>
+    <footer>
+      <p class="footerPar">© 2022 by Luce. All rights reserved.</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

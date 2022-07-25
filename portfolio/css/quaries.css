@@ -1,0 +1,359 @@
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+  /* header {
+    display: none;
+  } */
+  .dotContainer {
+    margin: 6rem 0 0rem 42.5rem;
+    display: none;
+  }
+  .top {
+  }
+  .right {
+    margin-left: 160px;
+  }
+
+  .rot {
+    margin-top: -8rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .logo {
+    top: 35%;
+    left: 4%;
+    font-size: 3.1rem;
+    margin-left: 19rem;
+  }
+  .navigationMenuButton {
+    color: #222;
+    height: 3rem;
+    width: 3rem;
+  }
+  .navigationMenuButton {
+    position: relative;
+    top: 0%;
+    left: -50%;
+    color: #222;
+    height: 3rem;
+    width: 3rem;
+  }
+  .hi {
+    font-size: 3.5rem;
+  }
+  .md {
+    font-size: 4rem;
+    color: #ff922b;
+  }
+  .summary {
+    font-size: 1.8rem;
+  }
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    height: 90vh;
+    margin: 0 2rem;
+  }
+  .heroImg {
+    margin-top: 1.7rem;
+    max-width: 100%;
+    max-height: 35rem;
+    margin-left: 0rem;
+  }
+  .victorHeader {
+    max-width: 100%;
+    max-height: 25rem;
+    top: 65%;
+    left: 53%;
+  }
+  .heroTextBox1 {
+    font-size: 1.7rem;
+    width: 13rem;
+    height: 5.2rem;
+    top: 49%;
+    left: 60%;
+  }
+  .heroTextBox2 {
+    font-size: 1.7rem;
+    width: 13rem;
+    height: 5.2rem;
+    top: 73.3%;
+    left: 10%;
+  }
+  .headerButton {
+    font-size: 2.1rem;
+    padding: 1rem 2rem;
+  }
+  .ph-instagram-logo {
+    font-size: 4rem;
+  }
+  .ph-linkedin-logo {
+    font-size: 4rem;
+  }
+  .ph-facebook-logo {
+    font-size: 4rem;
+  }
+  .aboutContainer {
+    flex-direction: column;
+    height: 80vh;
+    padding: 5rem 4rem;
+  }
+  .aboutFirstContainer {
+    max-width: 100%;
+  }
+  .aboutFirstTitle {
+    font-size: 3.5rem;
+    width: 80%;
+  }
+  .aboutFirstLabel {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .aboutFirstButton {
+    margin: 1rem 0 0 -1rem;
+    font-size: 1.9rem;
+    padding: 1.5rem 2rem;
+  }
+  .aboutSecondContainer {
+    width: 60%;
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
+  .aboutSecondCard1,
+  .aboutSecondCard2,
+  .aboutSecondCard3 {
+    width: 65%;
+    height: 110%;
+    border-radius: 1rem;
+    background-color: #fff4e6;
+    transition: all 0.4s;
+  }
+  .aboutSecondCard1 {
+    position: absolute;
+    top: 120%;
+    left: 38%;
+  }
+  .aboutSecondCard2 {
+  }
+  .aboutSecondCard3 {
+    position: absolute;
+    top: 0%;
+    left: 76%;
+  }
+  .ph-drop-half,
+  .ph-sketch-logo,
+  .ph-code {
+    font-size: 4rem;
+  }
+  .aboutSecondTitle {
+    font-size: 2rem;
+  }
+  .aboutSecondLabel {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .aboutFutearsContainer {
+    padding: 5rem 0;
+  }
+  .aboutSecondButton {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .aboutFutears {
+    padding: 2rem;
+    margin-right: 5rem;
+    font-size: 1.7rem;
+  }
+  .aboutFutears2 {
+    padding: 2rem 1.7rem;
+    font-size: 1.7rem;
+  }
+  .aboutFutearsTitle {
+    margin-right: 5rem;
+    font-size: 2rem;
+  }
+  .aboutFutearsTitle1 {
+    margin: 1rem 0 0.5rem 0;
+  }
+  .aboutFutearsTitle2 {
+    color: #ff922b;
+  }
+  .projectContainer {
+    height: 245vh;
+    margin-top: 4rem;
+    padding-top: 1rem;
+  }
+  .projectCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .projectTitle2 {
+    color: #ff922b;
+    margin-bottom: 3rem;
+  }
+
+  .projectCard {
+    margin-top: 2rem;
+    max-width: 40rem;
+    height: 20rem;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.4s;
+    border-radius: 1rem;
+  }
+  .projectCardPosition {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+  .projectCard:hover {
+    width: 41rem;
+    height: 42rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+  .projectCardPosition:hover {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+  .projectCard:hover .projectCardTitle {
+    transform: translateY(1rem);
+  }
+  .projectCard:hover .projectCardPar {
+    transform: translateY(29rem);
+  }
+  .projectCard:hover .projectCardButton {
+    transform: translateY(35rem);
+  }
+  .projectImg {
+    max-width: 40rem;
+    height: 20em;
+    margin-bottom: 1rem;
+  }
+  .projectCardTitle {
+    font-size: 3rem;
+  }
+  .projectCardPar {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  .projectCardButton {
+    font-size: 2rem;
+    margin: 1rem 0 0 12.5rem;
+    padding: 1.2rem 1.5rem;
+  }
+  .projectCardButton2 {
+    background-color: #5ec576;
+  }
+  .projectCardButton3 {
+    background-color: #101d2c;
+  }
+  .projectCardButton4 {
+    background-color: #5ec576;
+  }
+  .signup {
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .signupContainer {
+    flex-direction: column;
+    margin: 0rem;
+    max-width: 100%;
+  }
+  .signupList {
+    max-width: 100%;
+    height: 60rem;
+  }
+  .signupImgMob {
+    display: block;
+    height: 55rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(235, 151, 78, 0.35),
+        rgba(230, 125, 34, 0.35)
+      ),
+      url(../img/881.PNG);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .signupImg {
+    display: none;
+  }
+  .signupTitle {
+    font-size: 3.56rem;
+    max-width: 90%;
+  }
+  .signupDescription {
+    font-size: 2rem;
+    max-width: 85%;
+  }
+  .signupCard {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2.4rem 2.73rem;
+  }
+  .signupLabel {
+    font-size: 1.56rem;
+  }
+  .input {
+    margin-top: 0.66rem;
+    padding-left: 1.06rem;
+    font-size: 1.7rem;
+    max-width: 100%;
+    height: 4rem;
+  }
+  .input2 {
+    display: block;
+    margin-top: 0.66rem;
+    padding-left: 1.06rem;
+    font-size: 1.7rem;
+    max-width: 100%;
+    height: 4rem;
+  }
+  .signupLabel2 {
+    display: block;
+    font-size: 1.56rem;
+  }
+  .email2 {
+    display: none;
+  }
+  .signupSelect {
+    margin-top: 0.66rem;
+    padding-left: 1.06rem;
+    font-size: 1.7rem;
+    max-width: 100%;
+    height: 4rem;
+  }
+  .signupButton {
+    margin-top: 3.13rem;
+    font-size: 1.9rem;
+    max-width: 100%;
+    height: 5rem;
+  }
+  .footerPar {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+}
