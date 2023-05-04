@@ -1,0 +1,304 @@
+.about {
+  background-color: #f7f7f7;
+  padding: 6rem 8rem;
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+}
+.aboutContentContainer {
+  max-width: 40%;
+}
+section {
+  max-width: 60%;
+}
+.aboutCardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.aboutContainer h2 {
+  font-size: 2rem;
+}
+.aboutContainer h2:nth-child(2) {
+  color: var(--primaryColor);
+}
+.aboutContainer p {
+  font-size: 1.1rem;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+}
+.aboutContainer a {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primaryColor);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.aboutCard {
+  display: inline-block;
+  background-color: var(--secondaryColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+.aboutCard:hover {
+  transform: translateY(-1.1rem);
+}
+.aboutCard:hover:nth-child(2) {
+  transform: translateY(-2rem);
+}
+.aboutCard:nth-child(2) {
+  transform: translateY(-1.1rem);
+}
+.aboutCard div:nth-child(1) {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: var(--primaryColor);
+}
+.aboutCard h3 {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.aboutCard p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+.aboutCard a {
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: var(--primaryFontColor);
+}
+.aboutCard a:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.futearContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.futearContainer h3:nth-child(1) {
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  border: 5px solid #00ff0a;
+  width: 5rem;
+  border-radius: 50%;
+  animation: color 1.2s linear infinite;
+  margin-right: 5rem;
+}
+.futearContainer h3 {
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.futearContainer h3 span:nth-child(2) {
+  margin: 1rem 0 0.5rem 0;
+}
+.futearContainer h3 span:nth-child(2) {
+  color: var(--primaryColor);
+}
+[data-scroll] {
+  transition: all 1s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  animation: movetoleft 1s ease-in;
+}
+section[data-scroll="in"] {
+  opacity: 1;
+  animation: movetotop 1s ease-in;
+}
+article[data-scroll="in"] {
+  opacity: 1;
+  animation: movetotop 1s ease-in;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+/* animation */
+@keyframes movetoleft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80% {
+    transform: translate(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes movetotop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 1150px) {
+  .about {
+    padding: 6rem 2rem;
+  }
+  .aboutContainer {
+    flex-direction: row;
+  }
+  .aboutCardContainer {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .aboutContainer h2 {
+    font-size: 1.7rem;
+  }
+  .aboutContainer p {
+    font-size: 1rem;
+  }
+  .aboutContainer a {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .aboutCard div:nth-child(1) {
+    font-size: 2rem;
+  }
+  .aboutCard h3 {
+    font-size: 1.5rem;
+  }
+  .aboutCard p {
+    font-size: 0.95rem;
+  }
+  .aboutCard a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    padding: 6rem 2rem;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutCard:nth-child(2) {
+    transform: translateY(1rem);
+    margin: 1.5rem 0 4rem 0;
+  }
+  .aboutCard:hover:nth-child(2) {
+    transform: translateY(-1.1rem);
+  }
+  section {
+    max-width: 100%;
+  }
+  .aboutCardContainer {
+    margin-top: 3rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .aboutCard div:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .aboutCard h3 {
+    font-size: 1.2rem;
+  }
+  .aboutCard p {
+    font-size: 0.7rem;
+  }
+  .aboutCard a {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 650px) {
+  .about {
+    background-color: #f7f7f7;
+    padding: 3rem 1rem;
+  }
+  .aboutCardContainer {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  section {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .aboutCard div:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .aboutCard h3 {
+    font-size: 1.3rem;
+  }
+  .aboutCard p {
+    font-size: 0.9rem;
+  }
+  .aboutCard a {
+    font-size: 0.8rem;
+  }
+  .futearContainer {
+    margin-top: 7rem;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .futearCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .futearContainer h3:nth-child(1) {
+    padding: 1rem;
+    width: 4rem;
+  }
+  .futearContainer h3 {
+    font-size: 1rem;
+    margin-right: 0rem;
+  }
+}
+@media (max-width: 450px) {
+  section {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .aboutContainer h2 {
+    font-size: 1.8rem;
+  }
+  .aboutContainer p {
+    font-size: 0.8rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .aboutContainer a {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--primaryColor);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

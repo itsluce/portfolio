@@ -1,0 +1,115 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 10rem;
+  padding-right: 5rem;
+  height: 5rem;
+  z-index: 999;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 2.1rem;
+  animation: color 2s linear infinite;
+  color: #ff922b;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.navList {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+}
+.navList a {
+  font-size: 1.5rem;
+  color: var(--primaryFontColor);
+  font-weight: 700;
+  text-decoration: none;
+}
+.navList a:nth-child(5) {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: var(--primaryColor);
+}
+.navList a:last-child:hover {
+  background-color: #a8611f;
+  color: #fff;
+}
+.navList a:hover {
+  color: var(--primaryColor);
+  transition: all 0.4s;
+}
+.menuNav {
+  display: none;
+}
+@keyframes color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 1200px) {
+  nav {
+    padding: 0 7rem;
+    padding-right: 3rem;
+  }
+  .logo {
+    font-size: 1.7rem;
+  }
+  .navList a {
+    font-size: 1.3rem;
+  }
+  .navList a:last-child {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 950px) {
+  nav {
+    padding: 0 4rem;
+    padding-right: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navList {
+    width: 30rem;
+  }
+  .navList a {
+    font-size: 1.1rem;
+  }
+  .navList a:last-child {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .navList {
+    display: none;
+  }
+  .menuNav {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  nav {
+    padding: 0;
+    padding-right: 1rem;
+  }
+  .logoContainer {
+    padding: 0 2rem;
+  }
+}

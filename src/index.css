@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Rubik";
+}
+body {
+  margin: 0;
+  background-color: var(--secondaryColor);
+  color: var(--primaryFontColor);
+}
+:root {
+  --primaryColor: #ff922b;
+  --secondaryColor: #fff4e6;
+  --primaryFontColor: #3e2723;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}

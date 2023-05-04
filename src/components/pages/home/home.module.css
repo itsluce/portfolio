@@ -1,0 +1,255 @@
+.homeContainer {
+  max-height: 100rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 10rem 0 8rem 0;
+  display: flex;
+  flex-direction: row;
+}
+.firstContainer {
+  animation: movetoleft 1s ease-in;
+}
+.heroImg {
+  width: 20rem;
+}
+.heroImg img {
+  width: 100%;
+}
+.moveButton {
+  animation: moveButton 1s ease-in;
+}
+.firstContainer h2 {
+  font-size: 3.2rem;
+  margin: 0;
+}
+.homeContainer h2:nth-child(1) {
+  position: relative;
+  color: var(--secondaryColor);
+  -webkit-text-stroke: 0.1rem var(--primaryFontColor);
+}
+.homeContainer h2:nth-child(1)::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 0%;
+  white-space: nowrap;
+  color: var(--primaryFontColor);
+  -webkit-text-stroke: 0rem var(--primaryColor);
+  overflow: hidden;
+  animation: textStrok 20s linear infinite;
+  animation-delay: 0.8s;
+}
+.homeContainer h2:nth-child(2) {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #222;
+}
+.homeContainer h2:nth-child(2)::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  white-space: nowrap;
+  color: var(--primaryColor);
+  animation: wave 3s ease-in-out infinite;
+}
+.homeContainer p {
+  font-size: 1.2rem;
+  max-width: 40rem;
+}
+.hireButton {
+  margin: 1rem 0rem 0 -1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10rem;
+  background-color: #ff922b;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  animation: moveButton 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.hireButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+hireButton:active {
+  transform: translateY(-1px);
+}
+
+.hireButton::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ff922b;
+  transition: all 0.4s;
+}
+
+.hireButton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.homeIconContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.homeIcon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--primaryFontColor);
+}
+@keyframes movetoleft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80% {
+    transform: translate(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveButton {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes movetoright {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80% {
+    transform: translate(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes textStrok {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 70%,
+      13% 48%,
+      26% 55%,
+      41% 64%,
+      56% 65%,
+      69% 58%,
+      84% 45%,
+      100% 38%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 30%,
+      20% 57%,
+      25% 50%,
+      40% 42%,
+      56% 40%,
+      71% 44%,
+      84% 50%,
+      100% 60%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+@media (max-width: 900px) {
+  .homeContainer {
+    padding: 10rem 0 8rem 2rem;
+  }
+  .heroImg {
+    width: 20rem;
+  }
+  .heroImg img {
+    width: 100%;
+  }
+  .firstContainer h2 {
+    font-size: 2.5rem;
+  }
+  .homeContainer p {
+    font-size: 1rem;
+  }
+  .homeContainer a {
+    font-size: 1rem;
+    margin: 1rem 0rem 0 -1rem;
+  }
+  .homeIconContainer {
+    gap: 1rem;
+  }
+  .homeIcon {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .homeContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .homeContainer {
+    padding: 7rem 0 8rem 1.5rem;
+  }
+  .firstContainer h2 {
+    font-size: 2rem;
+  }
+  .homeContainer p {
+    font-size: 0.8rem;
+  }
+  .homeContainer a {
+    font-size: 0.9rem;
+    margin: 1rem 0rem 0 0;
+  }
+}
+@media (max-width: 400px) {
+  .homeContainer {
+    padding: 7rem 0 8rem 1rem;
+  }
+  .firstContainer h2 {
+    font-size: 1.7rem;
+  }
+  .homeContainer a {
+    font-size: 0.8rem;
+  }
+  .homeIcon {
+    font-size: 1.6rem;
+  }
+}
